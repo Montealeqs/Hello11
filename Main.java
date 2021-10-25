@@ -3,21 +3,24 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-//        Կազմել ծրագիր, որը կտպի "Բաժանվում է", եթե a ամբողջ թիվը
-//        բաժանվում է 3-ի եւ 5-ի: Հակառակ դեպքում տպել "Չի բաժանվում":
-     int a=10;
-        for (int i = 1; i <=a ; i++) {
-            if (i%3==0)
-                System.out.println("Բաժանվում է");
-            else
-                System.out.println("Չի բաժանվում");
-        }
-        for (int i = 1; i <= a; i++) {
-            if (i%5==0)
-                System.out.println("Բաժանվում է");
-
-            else
-                System.out.println("Չի բաժանվում");
+//        3. Կազմել ծրագիր, որ կտպի 3 թվերից փոքրագույնը:
+        int a = 40;
+        int b = 20;
+        int c = 30;
+        int poqraguyn;
+        if (a < b) {
+            if (c < a) {
+                poqraguyn = c;
+            } else {
+                poqraguyn = a;
+            }
+        } else {
+            if (b < c) {
+                poqraguyn = b;
+            } else {
+                poqraguyn = c;
+            }
+            System.out.println(poqraguyn);
         }
     }
 }
